@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+font-family: "Poppins",Arial,sans-serif;
+height: 2000px;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* start nav */
+nav{
+    padding: 4px 60px;
+}
+nav .logo {
+ 
+}
+nav .logo span{
+color: #ffd369;
+font-style: normal;
+}
+nav .logo a{
+    font-size: 36px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+}
+nav .nav-list{
+
+}
+nav .nav-list ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+nav .nav-list ul li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+nav .nav-list ul li:hover a{
+ color: #ffd369;
+}
+/* end nav  */
+/* start header  */
+
+header {
+    width: 100%;
+    height: 600px;
+background-image: url(../img/xbg_1.jpg.pagespeed.ic.N8Wtgh_Hsu.webp);
+background-size: cover;
+/* background-position: fixed; */
+background-attachment: fixed;
+}
+.overlay{ background: linear-gradient(45deg,#f200ff 0%,#ffba42 100%);
+    width:100%;
+    height: 100%;
+    opacity: 0.8;}
+.read .read-title{
+    width: 80%;
+    margin-top: 75px;
+    position: relative;
+}
+
+.read .read-title p{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.read .read-title h1{
+    font-size: 120px;
+    letter-spacing: 11px;
+    color:white;
+}
+.read .read-title h4{
+    color: white;
+    margin-top: 20px;
+    line-height: 1.8;
+    width: 60%;
+}
+.read .read-title .pointer{
+/* border: 2px solid red; */
+width: 5%;
+height: 60px;
+position: relative;
+}
+.point{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 30px;
+    animation: arrow 2s  infinite ease-in ;
+    color: white;
+/* transition: 1s all ease-in; */
+    /* animation-duration: 1s;
+    animation-iteration-count: infinite; */
+}
+@keyframes arrow{
+    0% {  top: 10%;}
+    100% { top: 50%; opacity: 0.6;}
+}
+/* end header  */
+/* start section */
+.build{
+margin-top: 20px;
+position: relative;
+}
+ .build .build-img{
+     width: 99%;
+ }
+ .build .build-img img{
+     width: 100%;
+     height: 100%;
+ }
+ .build .build-content{
+margin-left: 30px;
+margin-top: -200px;
+ }
+ .build .build-content p{
+color: gray;
+ }
+ .build .build-content h2{
+    font-size: 30px;
+    margin-bottom: 31px;
+    margin-top: 25px;
+    line-height: 1.3;
+    width: 53%;
+ }
+ /* .build .socila-list{
+     opacity: 0;
+ } */
+
+ .build .socila-list a {
+    font-size: 20px;
+    background: #dbd5d5;
+    color: black;
+    padding: 10px 10px;
+ margin-left: 20px;
+opacity: 0;
+transition: 1s all ease-in;
+ }
+ .build:hover.socila-list {
+opacity: 1;
+}
+.build:hover.build.socila-list a:hover{
+color:#ffba42 ;
+}
+.build:hover.build .build-content h2{
+    color: gray;
+}
